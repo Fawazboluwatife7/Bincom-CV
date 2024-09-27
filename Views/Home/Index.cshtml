@@ -2,29 +2,12 @@
 
 <div class="column-12 offset-2">
 <h1>Mustapha Babatunde CV</h1>
-    <h2> Name:@Model.Name</h2>
+  
     <p>Email: @Model.Email</p>
     <p>Phone: @Model.Phone</p>
     <h2>Profile</h2>
     <p>@Model.Profile</p>
     <h2>Skills</h2>
-    <ul>
-        @foreach (var skill in Model.Skills)
-        {
-            <li>@skill</li>
-        }
-    </ul>
+   
 
-    <h2>Work Experience</h2>
-    @foreach (var experience in Model.WorkExperiences)
-    {
-        <h3>@experience.Company - @experience.Position (@experience.Duration)</h3>
-        <p>@experience.Responsibilities</p>
-    }
-
-    <h2>Education</h2>
-    @foreach (var education in Model.EducationHistory)
-    {
-        <h3>@education.Institution - @education.Degree (@education.Duration)</h3>
-    }
 </div>

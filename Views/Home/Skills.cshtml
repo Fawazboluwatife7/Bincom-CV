@@ -1,0 +1,13 @@
+﻿@model List<Bincom_CV.Models.Skill>
+
+<div class="col-md-12">
+    <h1 class="text-center text-primary pt-2">Skills</h1>
+
+    @foreach (var items in Model)
+    {
+        <div class="col-12 col-md-10 mx-auto border rounded p-3 mb-3">
+            <h2 class="text-secondary">@items.name</h2>
+            <h3>@items.skills</h3>
+        </div>
+    }
+</div>
