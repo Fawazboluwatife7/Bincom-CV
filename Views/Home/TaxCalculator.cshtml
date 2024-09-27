@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Tax Calculator";
+}
+
+<h2>Salary Calculator</h2>
+
+@using (Html.BeginForm("TaxCalculator", "Home", FormMethod.Post))
+{
+    <div>
+        <label>Enter Your Salary:</label>
+        <input type="number" name="salary" step="0.01" required />
+    </div>
+
+    <div>
+        <input type="submit" value="Calculate" />
+    </div>
+}
+
+@if (ViewBag.Salary != null)
+{
+    <h3>Results:</h3>
+    <p>Salary: @ViewBag.Salary</p>
+    <p>Tax (7%): @ViewBag.Tax</p>
+    <p>Balance after Tax: @ViewBag.Balance</p>
+}

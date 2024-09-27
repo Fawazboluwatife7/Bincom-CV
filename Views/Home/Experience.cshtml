@@ -1,0 +1,14 @@
+﻿@model List<Bincom_CV.Models.WorkExperience>
+
+<div class="col-md-12">
+    <h1 class="text-center text-primary pt-2">WORK EXPERIENCE</h1>
+
+    @foreach (var items in Model)
+    {
+        <div class="col-12 col-md-10 mx-auto border rounded p-3 mb-3">
+            <h3>@items.Company - @items.Position (@items.Duration)</h3>
+            <p>@items.Responsibilities</p>
+        </div>
+    }
+</div>
+</div>

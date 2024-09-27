@@ -1,0 +1,12 @@
+﻿@model List<Bincom_CV.Models.Education>
+
+<div class="col-md-12">
+    <h1 class="text-center text-primary pt-2">Educational Qualification</h1>
+
+    @foreach (var education in Model)
+    {
+        <div class="border rounded p-3 mb-3">
+            <h3>@education.Institution - @education.Degree (@education.Duration)</h3>
+        </div>
+    }
+</div>
